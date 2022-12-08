@@ -25,7 +25,6 @@ final class MainViewControllerInteractor: MainViewControllerBusinessLogic, MainV
     var worker: MainViewControllerWorkingLogic = MainViewControllerWorker()
     
     var transactions: Transactions?
-    var filteredTransactions: Transactions?
     
     func fetchList() {
         checkConnection()
@@ -34,7 +33,6 @@ final class MainViewControllerInteractor: MainViewControllerBusinessLogic, MainV
             switch result {
             case .success(let response):
                 self.transactions = response
-                self.filteredTransactions = response
                 guard let transactions = self.transactions else { return }
                 self.presenter?.presentTransactions(response: MainViewController.Fetch.Response(transactionsResponse: transactions))
             case .failure(let error):
@@ -51,7 +49,7 @@ final class MainViewControllerInteractor: MainViewControllerBusinessLogic, MainV
     }
     
     func fetchFilter(request: String) {
-        let filteredData = filteredTransactions?.items?.filter({ filter in
+        let filteredData = transactions?.items?.filter({ filter in
             return String(filter.category ?? 1) == request
         })
         guard let filteredData else {
