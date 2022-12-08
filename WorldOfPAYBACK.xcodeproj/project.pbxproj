@@ -7,16 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8932C7252941B76A00FA0CA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932C7242941B76A00FA0CA1 /* Constants.swift */; };
+		8953BB23294280E000BF9C95 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 8953BB22294280E000BF9C95 /* Reachability */; };
 		898E924B293E7423008DA661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E924A293E7423008DA661 /* AppDelegate.swift */; };
 		898E924D293E7423008DA661 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E924C293E7423008DA661 /* SceneDelegate.swift */; };
-		898E924F293E7423008DA661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E924E293E7423008DA661 /* ViewController.swift */; };
-		898E9252293E7423008DA661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898E9250293E7423008DA661 /* Main.storyboard */; };
 		898E9255293E7423008DA661 /* WorldOfPAYBACK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 898E9253293E7423008DA661 /* WorldOfPAYBACK.xcdatamodeld */; };
 		898E9257293E7425008DA661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898E9256293E7425008DA661 /* Assets.xcassets */; };
 		898E925A293E7425008DA661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898E9258293E7425008DA661 /* LaunchScreen.storyboard */; };
 		898E9265293E7425008DA661 /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9264293E7425008DA661 /* WorldOfPAYBACKTests.swift */; };
 		898E926F293E7426008DA661 /* WorldOfPAYBACKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E926E293E7426008DA661 /* WorldOfPAYBACKUITests.swift */; };
 		898E9271293E7426008DA661 /* WorldOfPAYBACKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9270293E7426008DA661 /* WorldOfPAYBACKUITestsLaunchTests.swift */; };
+		898E9285293E77F8008DA661 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898E927E293E77F8008DA661 /* MainViewController.storyboard */; };
+		898E9286293E77F8008DA661 /* MainViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E927F293E77F8008DA661 /* MainViewControllerViewController.swift */; };
+		898E9287293E77F8008DA661 /* MainViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9280293E77F8008DA661 /* MainViewControllerPresenter.swift */; };
+		898E9288293E77F8008DA661 /* MainViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9281293E77F8008DA661 /* MainViewControllerInteractor.swift */; };
+		898E9289293E77F8008DA661 /* MainViewControllerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9282293E77F8008DA661 /* MainViewControllerModels.swift */; };
+		898E928A293E77F8008DA661 /* MainViewControllerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9283293E77F8008DA661 /* MainViewControllerWorker.swift */; };
+		898E928B293E77F8008DA661 /* MainViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9284293E77F8008DA661 /* MainViewControllerRouter.swift */; };
+		898E928F293E7897008DA661 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E928D293E7897008DA661 /* TransactionTableViewCell.swift */; };
+		898E9290293E7897008DA661 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898E928E293E7897008DA661 /* TransactionTableViewCell.xib */; };
+		898E9292293E78AF008DA661 /* TransactionTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9291293E78AF008DA661 /* TransactionTableViewModel.swift */; };
+		898E9295293E8157008DA661 /* transaction-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 898E9294293E8157008DA661 /* transaction-response.json */; };
+		898E9297293E81F3008DA661 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E9296293E81F3008DA661 /* ResponseModel.swift */; };
+		898E929B293E8553008DA661 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E929A293E8553008DA661 /* MockAPI.swift */; };
+		898E929D293E8669008DA661 /* MockJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E929C293E8669008DA661 /* MockJSON.swift */; };
+		899DDDF829410F1B002BBDAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899DDDF729410F1A002BBDAC /* Extensions.swift */; };
+		89AF3866293FBEED0075EDC5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 89AF3865293FBEED0075EDC5 /* SwiftyJSON */; };
+		89AF3868293FD5010075EDC5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF3867293FD5010075EDC5 /* Alert.swift */; };
+		89B24081293F143F005F9311 /* DetailTransactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B2407A293F143F005F9311 /* DetailTransactions.storyboard */; };
+		89B24082293F143F005F9311 /* DetailTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2407B293F143F005F9311 /* DetailTransactionsViewController.swift */; };
+		89B24083293F143F005F9311 /* DetailTransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2407C293F143F005F9311 /* DetailTransactionsPresenter.swift */; };
+		89B24084293F143F005F9311 /* DetailTransactionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2407D293F143F005F9311 /* DetailTransactionsInteractor.swift */; };
+		89B24085293F143F005F9311 /* DetailTransactionsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2407E293F143F005F9311 /* DetailTransactionsModels.swift */; };
+		89B24086293F143F005F9311 /* DetailTransactionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2407F293F143F005F9311 /* DetailTransactionsWorker.swift */; };
+		89B24087293F143F005F9311 /* DetailTransactionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B24080293F143F005F9311 /* DetailTransactionsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8932C7242941B76A00FA0CA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		898E9247293E7423008DA661 /* WorldOfPAYBACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPAYBACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898E924A293E7423008DA661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		898E924C293E7423008DA661 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		898E924E293E7423008DA661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		898E9251293E7423008DA661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		898E9254293E7423008DA661 /* WorldOfPAYBACK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldOfPAYBACK.xcdatamodel; sourceTree = "<group>"; };
 		898E9256293E7425008DA661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898E9259293E7425008DA661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +74,29 @@
 		898E926A293E7426008DA661 /* WorldOfPAYBACKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		898E926E293E7426008DA661 /* WorldOfPAYBACKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITests.swift; sourceTree = "<group>"; };
 		898E9270293E7426008DA661 /* WorldOfPAYBACKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		898E927E293E77F8008DA661 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		898E927F293E77F8008DA661 /* MainViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewController.swift; sourceTree = "<group>"; };
+		898E9280293E77F8008DA661 /* MainViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerPresenter.swift; sourceTree = "<group>"; };
+		898E9281293E77F8008DA661 /* MainViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerInteractor.swift; sourceTree = "<group>"; };
+		898E9282293E77F8008DA661 /* MainViewControllerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModels.swift; sourceTree = "<group>"; };
+		898E9283293E77F8008DA661 /* MainViewControllerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerWorker.swift; sourceTree = "<group>"; };
+		898E9284293E77F8008DA661 /* MainViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerRouter.swift; sourceTree = "<group>"; };
+		898E928D293E7897008DA661 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		898E928E293E7897008DA661 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		898E9291293E78AF008DA661 /* TransactionTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewModel.swift; sourceTree = "<group>"; };
+		898E9294293E8157008DA661 /* transaction-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "transaction-response.json"; sourceTree = "<group>"; };
+		898E9296293E81F3008DA661 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		898E929A293E8553008DA661 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		898E929C293E8669008DA661 /* MockJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJSON.swift; sourceTree = "<group>"; };
+		899DDDF729410F1A002BBDAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		89AF3867293FD5010075EDC5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		89B2407A293F143F005F9311 /* DetailTransactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailTransactions.storyboard; sourceTree = "<group>"; };
+		89B2407B293F143F005F9311 /* DetailTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionsViewController.swift; sourceTree = "<group>"; };
+		89B2407C293F143F005F9311 /* DetailTransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionsPresenter.swift; sourceTree = "<group>"; };
+		89B2407D293F143F005F9311 /* DetailTransactionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionsInteractor.swift; sourceTree = "<group>"; };
+		89B2407E293F143F005F9311 /* DetailTransactionsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionsModels.swift; sourceTree = "<group>"; };
+		89B2407F293F143F005F9311 /* DetailTransactionsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionsWorker.swift; sourceTree = "<group>"; };
+		89B24080293F143F005F9311 /* DetailTransactionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AF3866293FBEED0075EDC5 /* SwiftyJSON in Frameworks */,
+				8953BB23294280E000BF9C95 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +149,11 @@
 		898E9249293E7423008DA661 /* WorldOfPAYBACK */ = {
 			isa = PBXGroup;
 			children = (
-				898E924A293E7423008DA661 /* AppDelegate.swift */,
-				898E924C293E7423008DA661 /* SceneDelegate.swift */,
-				898E924E293E7423008DA661 /* ViewController.swift */,
-				898E9250293E7423008DA661 /* Main.storyboard */,
+				898E9299293E853B008DA661 /* Service */,
+				898E9298293E81F8008DA661 /* ResponseModels */,
+				898E9293293E812F008DA661 /* Mocks */,
+				898E927D293E762E008DA661 /* Scenes */,
+				899DDDF929410F2B002BBDAC /* SupportingFiles */,
 				898E9256293E7425008DA661 /* Assets.xcassets */,
 				898E9258293E7425008DA661 /* LaunchScreen.storyboard */,
 				898E925B293E7425008DA661 /* Info.plist */,
@@ -130,6 +179,83 @@
 			path = WorldOfPAYBACKUITests;
 			sourceTree = "<group>";
 		};
+		898E927D293E762E008DA661 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				89B24079293F142A005F9311 /* DetailTransactions */,
+				898E928C293E7881008DA661 /* TransactionCells */,
+				898E927E293E77F8008DA661 /* MainViewController.storyboard */,
+				898E927F293E77F8008DA661 /* MainViewControllerViewController.swift */,
+				898E9280293E77F8008DA661 /* MainViewControllerPresenter.swift */,
+				898E9281293E77F8008DA661 /* MainViewControllerInteractor.swift */,
+				898E9282293E77F8008DA661 /* MainViewControllerModels.swift */,
+				898E9283293E77F8008DA661 /* MainViewControllerWorker.swift */,
+				898E9284293E77F8008DA661 /* MainViewControllerRouter.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		898E928C293E7881008DA661 /* TransactionCells */ = {
+			isa = PBXGroup;
+			children = (
+				898E928D293E7897008DA661 /* TransactionTableViewCell.swift */,
+				898E928E293E7897008DA661 /* TransactionTableViewCell.xib */,
+				898E9291293E78AF008DA661 /* TransactionTableViewModel.swift */,
+			);
+			path = TransactionCells;
+			sourceTree = "<group>";
+		};
+		898E9293293E812F008DA661 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				898E9294293E8157008DA661 /* transaction-response.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		898E9298293E81F8008DA661 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				898E9296293E81F3008DA661 /* ResponseModel.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		898E9299293E853B008DA661 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				898E929A293E8553008DA661 /* MockAPI.swift */,
+				898E929C293E8669008DA661 /* MockJSON.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		899DDDF929410F2B002BBDAC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				898E924A293E7423008DA661 /* AppDelegate.swift */,
+				898E924C293E7423008DA661 /* SceneDelegate.swift */,
+				89AF3867293FD5010075EDC5 /* Alert.swift */,
+				899DDDF729410F1A002BBDAC /* Extensions.swift */,
+				8932C7242941B76A00FA0CA1 /* Constants.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		89B24079293F142A005F9311 /* DetailTransactions */ = {
+			isa = PBXGroup;
+			children = (
+				89B2407A293F143F005F9311 /* DetailTransactions.storyboard */,
+				89B2407B293F143F005F9311 /* DetailTransactionsViewController.swift */,
+				89B2407C293F143F005F9311 /* DetailTransactionsPresenter.swift */,
+				89B2407D293F143F005F9311 /* DetailTransactionsInteractor.swift */,
+				89B2407E293F143F005F9311 /* DetailTransactionsModels.swift */,
+				89B2407F293F143F005F9311 /* DetailTransactionsWorker.swift */,
+				89B24080293F143F005F9311 /* DetailTransactionsRouter.swift */,
+			);
+			path = DetailTransactions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +272,10 @@
 			dependencies = (
 			);
 			name = WorldOfPAYBACK;
+			packageProductDependencies = (
+				89AF3865293FBEED0075EDC5 /* SwiftyJSON */,
+				8953BB22294280E000BF9C95 /* Reachability */,
+			);
 			productName = WorldOfPAYBACK;
 			productReference = 898E9247293E7423008DA661 /* WorldOfPAYBACK.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +348,10 @@
 				Base,
 			);
 			mainGroup = 898E923E293E7423008DA661;
+			packageReferences = (
+				89AF3864293FBEED0075EDC5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				8953BB21294280E000BF9C95 /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = 898E9248293E7423008DA661 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,9 +368,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B24081293F143F005F9311 /* DetailTransactions.storyboard in Resources */,
+				898E9290293E7897008DA661 /* TransactionTableViewCell.xib in Resources */,
+				898E9285293E77F8008DA661 /* MainViewController.storyboard in Resources */,
 				898E925A293E7425008DA661 /* LaunchScreen.storyboard in Resources */,
 				898E9257293E7425008DA661 /* Assets.xcassets in Resources */,
-				898E9252293E7423008DA661 /* Main.storyboard in Resources */,
+				898E9295293E8157008DA661 /* transaction-response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +398,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898E924F293E7423008DA661 /* ViewController.swift in Sources */,
+				898E928F293E7897008DA661 /* TransactionTableViewCell.swift in Sources */,
+				898E9289293E77F8008DA661 /* MainViewControllerModels.swift in Sources */,
 				898E924B293E7423008DA661 /* AppDelegate.swift in Sources */,
+				898E9288293E77F8008DA661 /* MainViewControllerInteractor.swift in Sources */,
+				898E9287293E77F8008DA661 /* MainViewControllerPresenter.swift in Sources */,
+				898E9286293E77F8008DA661 /* MainViewControllerViewController.swift in Sources */,
+				8932C7252941B76A00FA0CA1 /* Constants.swift in Sources */,
+				898E928B293E77F8008DA661 /* MainViewControllerRouter.swift in Sources */,
+				89AF3868293FD5010075EDC5 /* Alert.swift in Sources */,
+				898E9292293E78AF008DA661 /* TransactionTableViewModel.swift in Sources */,
+				899DDDF829410F1B002BBDAC /* Extensions.swift in Sources */,
+				898E9297293E81F3008DA661 /* ResponseModel.swift in Sources */,
+				898E929B293E8553008DA661 /* MockAPI.swift in Sources */,
+				89B24086293F143F005F9311 /* DetailTransactionsWorker.swift in Sources */,
 				898E924D293E7423008DA661 /* SceneDelegate.swift in Sources */,
+				89B24084293F143F005F9311 /* DetailTransactionsInteractor.swift in Sources */,
+				89B24082293F143F005F9311 /* DetailTransactionsViewController.swift in Sources */,
+				89B24083293F143F005F9311 /* DetailTransactionsPresenter.swift in Sources */,
+				898E929D293E8669008DA661 /* MockJSON.swift in Sources */,
+				89B24085293F143F005F9311 /* DetailTransactionsModels.swift in Sources */,
 				898E9255293E7423008DA661 /* WorldOfPAYBACK.xcdatamodeld in Sources */,
+				89B24087293F143F005F9311 /* DetailTransactionsRouter.swift in Sources */,
+				898E928A293E77F8008DA661 /* MainViewControllerWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +457,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		898E9250293E7423008DA661 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				898E9251293E7423008DA661 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		898E9258293E7425008DA661 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +594,8 @@
 				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = MainViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +603,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = furkan.erucar.WorldOfPAYBACK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,9 +624,8 @@
 				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = MainViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,9 +633,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = furkan.erucar.WorldOfPAYBACK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -606,6 +758,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8953BB21294280E000BF9C95 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		89AF3864293FBEED0075EDC5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8953BB22294280E000BF9C95 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8953BB21294280E000BF9C95 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		89AF3865293FBEED0075EDC5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AF3864293FBEED0075EDC5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		898E9253293E7423008DA661 /* WorldOfPAYBACK.xcdatamodeld */ = {
