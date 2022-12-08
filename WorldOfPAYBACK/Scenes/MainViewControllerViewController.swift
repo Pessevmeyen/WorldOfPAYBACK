@@ -58,6 +58,11 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
         createToolbarDoneButtonForPickerView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     // MARK: Setup
     
     private func setup() {
@@ -104,9 +109,10 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
         textField.inputAccessoryView = toolBar
     }
     
-    @objc func dismissButton() {
+    @objc private func dismissButton() {
         view.endEditing(true)
         interactor?.fetchDataAfterFetched()
+        tableView.reloadData()
         textField.text = ""
     }
     
@@ -155,6 +161,7 @@ extension MainViewControllerViewController: UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         router?.rouToTransactionDetail(index: indexPath.row)
+        tableView.reloadData()
     }
 }
 
