@@ -25,8 +25,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47v-2k-Sxf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="47v-2k-Sxf">
                                         <rect key="frame" x="8" y="36.5" width="350" height="155.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="155.5" id="n66-uT-tmI"/>
+                                        </constraints>
+                                        <string key="text">50); opaque = NO; autoresize = W; layer = &lt;CALayer: 0x600002b15da0&gt;&gt; delegate=0x7fa85980d200
+2022-12-09 14:16:44.677331+0300 WorldOfPAYBACK[95277:2117970] [Presentation] Presenting view controller &lt;UIAlertController: 0x7fa85a80c800&gt; from detached view controller &lt;WorldOfPAYBACK.MainViewControllerViewController: 0x7fa85b109f70&gt; is discouraged.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -43,6 +48,11 @@
                                     <constraint firstItem="47v-2k-Sxf" firstAttribute="top" secondItem="3Tq-eo-zGV" secondAttribute="bottom" constant="8" id="eB6-eC-Cap"/>
                                     <constraint firstAttribute="bottom" secondItem="47v-2k-Sxf" secondAttribute="bottom" constant="8" id="iri-bU-jL3"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
