@@ -22,7 +22,6 @@ extension MainViewControllerViewController {
     }
 }
 
-//MARK: - Button Shadow and Border Attributes in StoryBoard
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {

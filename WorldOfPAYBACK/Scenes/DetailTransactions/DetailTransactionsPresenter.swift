@@ -16,7 +16,6 @@ final class DetailTransactionsPresenter: DetailTransactionsPresentationLogic {
     weak var viewController: DetailTransactionsDisplayLogic?
     
     func presentDetails(response: DetailTransactions.Fetch.Response) {
-//        let details = response.transactionDetail
         viewController?.displayDetailsList(viewModel: DetailTransactions.Fetch.ViewModel(partnerDisplayName: response.transactionDetail?.partnerDisplayName,
                                                                                          description: response.transactionDetail?.transactionDetail?.description ?? ""))
     }

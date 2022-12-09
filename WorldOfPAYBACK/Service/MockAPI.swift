@@ -15,12 +15,12 @@ struct NetworkManager {
     
     private init() {}
     
-    func fetch<T: Codable>(encode model: T.Type, completion: @escaping ((Result<T, Error>) -> Void)) { //bi şeyi fetch edicem ve buna T diyorum.
+    func fetch<T: Codable>(encode model: T.Type, completion: @escaping ((Result<T, Error>) -> Void)) {
         
-        var randomInt = Int.random(in: 1...10)
-        print(randomInt)
+        let randomInt = Int.random(in: 1...10)
         var realURL: URL?
-        randomInt = 2
+        
+        // When a random number is generated, if statement check if the number is even, if so, it will show data, otherwise will block the data path.
         if randomInt % 2 == 0 {
             guard let path = Bundle.main.path(forResource: "transaction-response", ofType: "json") else { return }
             let url = URL(fileURLWithPath: path)

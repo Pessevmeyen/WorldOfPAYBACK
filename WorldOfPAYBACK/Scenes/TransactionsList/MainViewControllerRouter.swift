@@ -21,7 +21,6 @@ final class MainViewControllerRouter: MainViewControllerRoutingLogic, MainViewCo
     var dataStore: MainViewControllerDataStore?
     
     func rouToTransactionDetail(index: Int) {
-        // will be implement
         let storyboard = UIStoryboard(name: "DetailTransactions", bundle: nil)
         let destVC: DetailTransactionsViewController = storyboard.instantiateViewController(identifier: "DetailTransactionsViewController")
         destVC.router?.dataStore?.transactionsData = (dataStore?.transactions?.items?[index])
