@@ -20,5 +20,4 @@ final class DetailTransactionsPresenter: DetailTransactionsPresentationLogic {
         viewController?.displayDetailsList(viewModel: DetailTransactions.Fetch.ViewModel(partnerDisplayName: response.transactionDetail?.partnerDisplayName,
                                                                                          description: response.transactionDetail?.transactionDetail?.description ?? ""))
     }
-    
 }
