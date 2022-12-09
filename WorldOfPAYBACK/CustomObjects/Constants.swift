@@ -10,4 +10,6 @@ import Foundation
 
 struct Constants {
     static let capacityArray = ["1", "2", "3", "4"]
+    
+    static let transactionTableViewCellIdentifier = "TransactionTableViewCell"
 }
