@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftyJSON
-import SystemConfiguration
 
 protocol MainViewControllerDisplayLogic: AnyObject {
     func displayTransactions(viewModel: MainViewController.Fetch.ViewModel, totalAmount: Int)
@@ -23,7 +22,7 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.register(UINib(nibName: "TransactionTableViewCell", bundle: .main), forCellReuseIdentifier: "TransactionTableViewCell")
+            registerCell()
         }
     }
     
@@ -32,7 +31,6 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
     
     var interactor: MainViewControllerBusinessLogic?
     var router: (MainViewControllerRoutingLogic & MainViewControllerDataPassing)?
-    
     var viewModel: MainViewController.Fetch.ViewModel?
     
     var itemList = [MainViewController.Fetch.FilterItems]()
@@ -51,16 +49,10 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interactor?.fetchList()
-        setSearchImageView()
-        createFilterItems()
-        refreshTableView()
         createToolbarDoneButtonForPickerView()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        tableView.reloadData()
+        createFilterItems()
+        interactor?.fetchList()
+        refreshTableView()
     }
     
     // MARK: Setup
@@ -83,13 +75,6 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         tableView.addSubview(refreshControl)
     }
-    
-    private func setSearchImageView() {
-        let search = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
-        search.isEnabled = false
-        search.tintColor = .black
-        navigationItem.leftBarButtonItems = [search]
-    }
 
     private func createFilterItems() {
         pickerView.delegate = self
@@ -110,6 +95,7 @@ final class MainViewControllerViewController: UIViewController, UITextFieldDeleg
     }
     
     @objc private func dismissButton() {
+        navigationController?.dismiss(animated: true)
         view.endEditing(true)
         interactor?.fetchDataAfterFetched()
         tableView.reloadData()
