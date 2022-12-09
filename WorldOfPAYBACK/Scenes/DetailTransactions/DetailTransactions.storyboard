@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxe-uw-h5I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Transactions View Controller-->
+        <scene sceneID="D3m-6j-bBI">
+            <objects>
+                <viewController storyboardIdentifier="DetailTransactionsViewController" id="nxe-uw-h5I" customClass="DetailTransactionsViewController" customModule="WorldOfPAYBACK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chM-je-gA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="std-K9-Xuh">
+                                <rect key="frame" x="24" y="248" width="366" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tq-eo-zGV">
+                                        <rect key="frame" x="8" y="8" width="350" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="47v-2k-Sxf">
+                                        <rect key="frame" x="8" y="36.5" width="350" height="155.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="155.5" id="n66-uT-tmI"/>
+                                        </constraints>
+                                        <string key="text">50); opaque = NO; autoresize = W; layer = &lt;CALayer: 0x600002b15da0&gt;&gt; delegate=0x7fa85980d200
+2022-12-09 14:16:44.677331+0300 WorldOfPAYBACK[95277:2117970] [Presentation] Presenting view controller &lt;UIAlertController: 0x7fa85a80c800&gt; from detached view controller &lt;WorldOfPAYBACK.MainViewControllerViewController: 0x7fa85b109f70&gt; is discouraged.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="3Tq-eo-zGV" firstAttribute="leading" secondItem="std-K9-Xuh" secondAttribute="leading" constant="8" id="1Tj-2J-svO"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Tq-eo-zGV" secondAttribute="trailing" constant="8" id="8hC-Wx-HU5"/>
+                                    <constraint firstItem="47v-2k-Sxf" firstAttribute="leading" secondItem="std-K9-Xuh" secondAttribute="leading" constant="8" id="EgX-Xb-chX"/>
+                                    <constraint firstAttribute="trailing" secondItem="47v-2k-Sxf" secondAttribute="trailing" constant="8" id="JQe-3b-oV8"/>
+                                    <constraint firstItem="3Tq-eo-zGV" firstAttribute="top" secondItem="std-K9-Xuh" secondAttribute="top" constant="8" id="NkX-LS-u2G"/>
+                                    <constraint firstAttribute="height" constant="200" id="YU3-aC-76q"/>
+                                    <constraint firstItem="47v-2k-Sxf" firstAttribute="top" secondItem="3Tq-eo-zGV" secondAttribute="bottom" constant="8" id="eB6-eC-Cap"/>
+                                    <constraint firstAttribute="bottom" secondItem="47v-2k-Sxf" secondAttribute="bottom" constant="8" id="iri-bU-jL3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="std-K9-Xuh" firstAttribute="top" secondItem="acR-sl-ate" secondAttribute="top" constant="200" id="4mm-6l-jzs"/>
+                            <constraint firstItem="std-K9-Xuh" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="24" id="Zdw-UJ-NIQ"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="std-K9-Xuh" secondAttribute="trailing" constant="24" id="xSm-8P-86D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="47v-2k-Sxf" id="g9t-wM-jB6"/>
+                        <outlet property="partnerDisplayNameLabel" destination="3Tq-eo-zGV" id="7QV-gx-TxO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-gs-e4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
