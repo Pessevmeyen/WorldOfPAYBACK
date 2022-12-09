@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8902AE282942FCC000711E40 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8902AE272942FCC000711E40 /* IQKeyboardManagerSwift */; };
 		8932C7252941B76A00FA0CA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932C7242941B76A00FA0CA1 /* Constants.swift */; };
 		8953BB23294280E000BF9C95 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 8953BB22294280E000BF9C95 /* Reachability */; };
 		898E924B293E7423008DA661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E924A293E7423008DA661 /* AppDelegate.swift */; };
@@ -102,6 +103,7 @@
 			files = (
 				89AF3866293FBEED0075EDC5 /* SwiftyJSON in Frameworks */,
 				8953BB23294280E000BF9C95 /* Reachability in Frameworks */,
+				8902AE282942FCC000711E40 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +287,7 @@
 			packageProductDependencies = (
 				89AF3865293FBEED0075EDC5 /* SwiftyJSON */,
 				8953BB22294280E000BF9C95 /* Reachability */,
+				8902AE272942FCC000711E40 /* IQKeyboardManagerSwift */,
 			);
 			productName = WorldOfPAYBACK;
 			productReference = 898E9247293E7423008DA661 /* WorldOfPAYBACK.app */;
@@ -361,6 +364,7 @@
 			packageReferences = (
 				89AF3864293FBEED0075EDC5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				8953BB21294280E000BF9C95 /* XCRemoteSwiftPackageReference "Reachability" */,
+				8902AE262942FCC000711E40 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 898E9248293E7423008DA661 /* Products */;
 			projectDirPath = "";
@@ -597,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A2X4D6G99N;
+				DEVELOPMENT_TEAM = AZ5L42RB2D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -627,7 +631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A2X4D6G99N;
+				DEVELOPMENT_TEAM = AZ5L42RB2D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -768,6 +772,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8902AE262942FCC000711E40 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		8953BB21294280E000BF9C95 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
@@ -787,6 +799,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8902AE272942FCC000711E40 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8902AE262942FCC000711E40 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		8953BB22294280E000BF9C95 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8953BB21294280E000BF9C95 /* XCRemoteSwiftPackageReference "Reachability" */;
