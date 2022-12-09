@@ -7,7 +7,6 @@
 
 import Foundation
 
-// swiftlint:disable nesting
 enum MainViewController {
     
     enum Fetch {
