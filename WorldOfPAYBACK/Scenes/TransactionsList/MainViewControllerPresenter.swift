@@ -19,6 +19,7 @@ final class MainViewControllerPresenter: MainViewControllerPresentationLogic {
     weak var viewController: MainViewControllerDisplayLogic?
     
     func presentTransactions(response: MainViewController.Fetch.Response) {
+        var totalAmount = 0
         var transactions: [MainViewController.Fetch.ViewModel.TransactionModel] = []
         response.transactionsResponse.items?.forEach {
             transactions.append(MainViewController.Fetch.ViewModel.TransactionModel(partnerDisplayName: $0.partnerDisplayName,
@@ -29,12 +30,12 @@ final class MainViewControllerPresenter: MainViewControllerPresentationLogic {
                                                                                     amount: $0.transactionDetail?.value?.amount,
                                                                                     currency: $0.transactionDetail?.value?.currency))
         }
-        let sortedBooking = transactions.sorted { $0.bookingDate?.compare($1.bookingDate ?? "", options: .numeric) == .orderedDescending }
-        var totalAmount = 0
+        transactions = transactions.sorted { $0.bookingDate?.compare($1.bookingDate ?? "", options: .numeric) == .orderedDescending }
+        
         transactions.forEach { item in
             totalAmount += item.amount ?? 0
         }
-        viewController?.displayTransactions(viewModel: MainViewController.Fetch.ViewModel(transactionsList: sortedBooking), totalAmount: totalAmount)
+        viewController?.displayTransactions(viewModel: MainViewController.Fetch.ViewModel(transactionsList: transactions), totalAmount: totalAmount)
     }
     
     func presentAlert(response: Alert.Fetch.Response) {
@@ -46,6 +47,7 @@ final class MainViewControllerPresenter: MainViewControllerPresentationLogic {
     }
     
     func presentTransactions(response: [Item]) {
+        var totalAmount = 0
         var transactions: [MainViewController.Fetch.ViewModel.TransactionModel] = []
         response.forEach { value in
             transactions.append(MainViewController.Fetch.ViewModel.TransactionModel(partnerDisplayName: value.partnerDisplayName,
@@ -56,12 +58,12 @@ final class MainViewControllerPresenter: MainViewControllerPresentationLogic {
                                                                                     amount: value.transactionDetail?.value?.amount,
                                                                                     currency: value.transactionDetail?.value?.currency))
         }
-        let sortedBooking = transactions.sorted { $0.bookingDate?.compare($1.bookingDate ?? "", options: .numeric) == .orderedDescending }
-        var totalAmount = 0
+        transactions = transactions.sorted { $0.bookingDate?.compare($1.bookingDate ?? "", options: .numeric) == .orderedDescending }
+        
         transactions.forEach { item in
             totalAmount += item.amount ?? 0
         }
-        viewController?.displayTransactions(viewModel: MainViewController.Fetch.ViewModel(transactionsList: sortedBooking), totalAmount: totalAmount)
+        viewController?.displayTransactions(viewModel: MainViewController.Fetch.ViewModel(transactionsList: transactions), totalAmount: totalAmount)
     }
 }
 
@@ -73,7 +75,6 @@ extension Date {
         return dateFormatter.string(from: self)
     }
 }
-
 
 extension String {
     

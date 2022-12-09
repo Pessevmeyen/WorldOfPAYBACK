@@ -9,6 +9,8 @@ import UIKit
 
 class TransactionTableViewCell: UITableViewCell {
     
+    static let transactionTableViewCellID = "TransactionTableViewCell"
+    
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var valueAmountLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!

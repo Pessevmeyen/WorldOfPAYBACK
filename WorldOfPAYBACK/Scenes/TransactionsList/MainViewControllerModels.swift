@@ -32,7 +32,6 @@ enum MainViewController {
                 var bookingDate: String?
                 var amount: Int?
                 var currency: String?
-                
             }
         }
         
